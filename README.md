@@ -2,6 +2,8 @@
 
 This is a simple social media clone project developed using HTML, CSS, and JavaScript. The project mimics the basic functionalities of a social media platform where users can post text and images.
 
+![Demo Project](assets/img/demo.png)
+
 ## Features
 - **Post Creation**: Users can create posts with text and image uploads.
 - **Profile Modal**: Users can view their profile details in a modal window.
@@ -37,6 +39,3 @@ To run this project, all you need is a modern web browser.
 └── index.html        # The main HTML file   
    
 ```
-### Demo
-
-![Demo Project](assets/img/demo.png)

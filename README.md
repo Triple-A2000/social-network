@@ -37,3 +37,6 @@ To run this project, all you need is a modern web browser.
 └── index.html        # The main HTML file   
    
 ```
+### Demo
+
+![Demo Project](assets/img/demo.png)

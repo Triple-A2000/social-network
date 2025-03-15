@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+:root {
+    --app-bg-light: #f2f2f2;
+    --app-white-grey: #b0b3b8;
+    --app-dark-blue: #155697;
+    --app-black-blue: #021733;
+    --app-blue: #1877F2;
+    --app-light-blue: #b6d9ec;
+    --app-light-grey: #3A3B3C;
+    --app-dark-grey: #242526;
+    --app-bg-dark: #18191A;
+    --app-semibold: 600;
+    --app-font-size: 19px;
+    --app-white: #fff;
+}
+
+body {
+    background-color: var(--app-bg-dark);
+    height: 100vh;
+    color: var(--app-white);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/*--------------------------*/
+/*                          */
+/* Header                   */
+/*                          */
+/*--------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--app-dark-grey);
+    height: 56px;
+}
+
+header .flex {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header img {
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%; 
+    object-fit: contain; 
+    align-self: center; 
+}
+
+/*--------------------------*/
+/* Title                    */
+/*--------------------------*/
+
+.title {
+    flex-grow: 1;
+}
+
+.title h1 {
+    color: var(--app-white);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 56px;
+    text-transform: uppercase;
+    font-family: 'Sofia Sans', 'Lato', 'Arial', serif;
+}
+
+.title h1 span {
+    color: #78b9dc;
+}
+
+/*--------------------------*/
+/* Navigation               */
+/*--------------------------*/
+
+nav ul {
+    list-style: none;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-flex;
+    line-height: 56px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--app-white);
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: color 0.25s ease-in-out;
+    font-family: 'Changa', 'Lato', 'Arial', serif;
+}
+
+nav ul li a:hover {
+    color: var(--app-light-blue);
+}
+
+nav ul li + li {
+    margin-left: 25px;
+    line-height: 56px;
+}
+
+.spacing {
+    flex-grow: 1;
+}
+
+/*--------------------------*/
+/*                          */
+/* Main                     */
+/*                          */
+/*--------------------------*/
+
+/*--------------------------*/
+/* Post Container           */
+/*--------------------------*/
+
+.post-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: var(--app-dark-grey);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    background: var(--app-light-grey);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+    height: 80px;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--app-light-grey);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    height: 40px;
+}
+
+.file-upload input {
+    display: none;
+}
+
+.file-name {
+    margin-left: 5px;
+    font-size: 14px;
+    color: var(--app-white-grey);
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    background: var(--app-dark-blue);
+    color: var(--app-white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: var(--app-black-blue);
+}
+
+/*--------------------------*/
+/* Actual Post              */
+/*--------------------------*/
+
+.post {
+    background: var(--app-dark-grey);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--app-white-grey);
+    color: var(--app-bg-dark);
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}

@@ -116,6 +116,12 @@ nav ul li + li {
     flex-grow: 1;
 }
 
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide the navigation */
+    }
+}
+
 /*--------------------------*/
 /*                          */
 /* Main                     */

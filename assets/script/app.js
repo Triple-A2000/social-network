@@ -86,7 +86,8 @@ function createPost() {
         postHtml += `<img src='${imageUrl}' width='100%'>`;
     }
     postHtml += `</div>`;
-    postsSection.innerHTML += postHtml;
+
+    postsSection.insertAdjacentHTML('afterbegin', postHtml);
 
     postText.value = "";
     fileInput.value = "";
